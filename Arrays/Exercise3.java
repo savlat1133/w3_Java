@@ -7,9 +7,12 @@ public class Main {
         System.out.print("Input the grid: ");
         int grid = sc.nextInt();
 
+        String[][] array = new String[grid][grid];
+
         for(int i = 0; i < grid; i++){
             for(int n = 0; n < grid; n++){
-                System.out.print("_ ");
+                array[i][n] = "_";
+                System.out.print(array[i][n] + " ");
             }
             System.out.println("");
         }
